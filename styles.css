@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+  html{
+    font-family: 'Poppins', sans-serif;
+    font-size:1.25rem;
+  }
+  
+  body{
+    background: rgb(59, 197, 76);
+    color:#f1f1f1;
+    height:100%;
+  }
+  
+  #main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:2rem;
+  }
+  
+  #main #title,#description{
+    margin:0.25rem 0;
+  }
+  
+  /* survey-form */
+  
+  #main #survey-form{
+    background:rgb(5, 145, 21);
+    padding:1rem 2rem;
+    margin:1rem 0;
+    border-radius:0.5rem;
+    width:60%;
+  }
+  
+  #main #survey-form .input-group{
+    display:flex;
+    flex-direction:column;
+    padding:0.75rem 0;
+  }
+  
+  #main #survey-form .input-group input,#dropdown{
+    padding:0.5rem;
+    border-radius:0.2rem;
+    border:none;
+    font-family:'Poppins', sans-serif;
+    font-size:0.75rem;
+    margin:0.25rem 0;
+  }
+  
+  #main #survey-form .radiogroup{
+    display:flex;
+    flex-direction:column;
+  }
+  
+  #main #survey-form .input-group #comment{
+    max-width:100%;
+    border-radius:0.2rem;
+  }
+  
+  #main #survey-form button{
+    width:100%;
+    background:rgb(59, 197, 76);
+    color:#fff;
+    border:none;
+    border-radius:0.25rem;
+    padding:0.5rem;
+    font-size:1rem;
+    margin:1rem 0;
+  }
+
+  textarea{
+    font-family: 'Poppins', sans-serif;
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  /* Responsive */
+  
+  
+  @media(max-width:800px){
+    
+    #main {
+      padding:2rem 0;
+    }
+    
+    #main #survey-form{
+      width:90%;
+    }
+  
+  }

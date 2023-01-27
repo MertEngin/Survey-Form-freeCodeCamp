@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="main">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time</p>
+      <form id="survey-form">
+        <div class="input-group">
+          <label id="name-label" for="name">Name *
+          </label>
+          <input type="text" id="name" name="name" placeholder="Enter your name"
+          required>
+        </div>
+
+        <div class="input-group">
+          <label id="email-label" for="email">E-Mail *
+          </label>
+          <input type="email" id="email" name="email" placeholder="Enter your E-mail adress" required>
+          </div>
+
+        <div class="input-group"><label id="number-label" for="number">Age
+          </label>
+          <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="99">
+          </div>
+
+        <div class="input-group">
+          <label for="role">Which option best describes your current role? *</label>
+          <select id="dropdown" name="role" required>
+            <option disabled selected value>Select Current Role</option>
+            <option value="student">Student</option>
+            <option value="full-job">Full Time Job</option>
+            <option value="full-learn">Full Time Learn</option>
+            <option value="not-to-say">Prefer Not To Say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <div class="radiogroup">
+          <label id="experience">What is your camping experience?</label><hr>
+          <div class="radio">
+          <input type="radio" id="no" name="experience" value="no">
+          <label for="no">No Experience</label><br>
+          </div>
+          <div class="radio">
+          <input type="radio" id="beginner" name="experience" value="Beginner">
+          <label for="beginner">Beginner (1-2)</label><br>
+          </div>
+          <div class="radio">
+          <input type="radio" id="intermediate" name="experience" value="intermediate">
+          <label for="intermediate">Intermediate (3-5)</label><br>
+          </div>
+          <div class="radio">
+          <input type="radio" id="advanced" name="experience" value="advanced">
+          <label for="advanced">Advanced (5+)</label><br>
+            </div>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="checkgroup">
+          <label id="list">What do you need for camping?</label><hr>
+          <div class="check">
+          <input type="checkbox" id="item1" name="item1" value="barbecue">
+          <label for="item1">Barbecue</label><br>
+          </div>
+          <div class="check">
+          <input type="checkbox" id="item2" name="item2" value="insecticide">
+          <label for="item2">insecticide</label><br>
+          </div>
+          <div class="check">
+          <input type="checkbox" id="item3" name="item3" value="flashlight">
+          <label for="item1">Flashlight</label><br>
+          </div>
+          <div class="check">
+          <input type="checkbox" id="item4" name="item4" value="tent">
+          <label for="item4">Tent</label><br>
+          </div>
+          </div>
+        </div>
+        <div class="input-group">
+          <label id="comment" for="comment">Any comments or suggestions?</label>
+          <textarea id="comment" name="comment" rows="10"></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
